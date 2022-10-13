@@ -5,7 +5,7 @@
     --main-color: #d3ad7f;
     --black: #333;
     --bg: #fff;
-    --border: .2rem solid rgba(22, 17, 17, 0.3);
+    --border: .3rem solid rgba(22, 17, 17, 0.3);
 }
 
 * {
@@ -100,11 +100,12 @@ section {
     top: 0;
     left: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 800;
+
 }
 
 .header .logo img {
-    height: 7rem;
+    height: 5rem;
 }
 
 .qoute {
@@ -124,55 +125,31 @@ section {
     padding-bottom: .5rem;
 }
 
-.header .icons div {
-    color: #fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-}
-
-.header .icons div:hover {
-    color: var(--main-color);
-}
-
-#menu-btn {
-    display: none;
-}
-
-.header .search-form {
-    position: absolute;
-    top: 115%;
-    right: 7%;
-    background: #fff;
-    width: 50rem;
-    height: 5rem;
+.home {
+    min-height: 100vh;
     display: flex;
     align-items: center;
-    transform: scaleY(0);
-    transform-origin: top;
+    background: url(../resources/home.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-.header .search-form.active {
-    transform: scaleY(1);
+.home .content {
+    max-width: 30rem;
 }
 
-.header .search-form input {
-    height: 100%;
-    width: 100%;
-    font-size: 1.6rem;
-    color: var(--black);
-    padding: 1rem;
-    text-transform: none;
+.home .content h3 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
 }
 
-.header .search-form label {
-    cursor: pointer;
-    font-size: 2.2rem;
-    margin-right: 1.5rem;
-    color: var(--black);
+.home .content p {
+    font-size: 2rem;
+    font-weight: lighter;
+    line-height: 1.8;
+    padding: 1rem 0;
+    color: #eee;
 }
 
-.header .search-form label:hover {
-    color: var(--main-color);
-}
 
